@@ -1,0 +1,45 @@
+class Auto:
+    # El "constructor": Aquí definimos las características de fábrica
+    def __init__(self, marca, modelo, color):
+        self.marca = marca      # Características (se llaman ATRIBUTOS)
+        self.modelo = modelo
+        self.color = color
+        self.encendido = False  # Todos los autos arrancan apagados
+
+    # Acciones que el auto puede hacer (se llaman MÉTODOS)
+    def arrancar(self):
+        if not self.encendido:
+            self.encendido = True
+            print(f"El {self.marca} ha arrancado. ¡Brum brum!")
+        else:
+            print("El auto ya estaba encendido.")
+            
+# Creamos dos instancias (objetos) diferentes usando el mismo molde
+auto_juan = Auto("Toyota", "Corolla", "Rojo")
+auto_pedro = Auto("Nissan", "Sentra", "Azul")
+
+# Acceder a sus atributos (sus características)
+print(auto_juan.marca)  # Imprime: Toyota
+print(auto_pedro.color) # Imprime: Azul
+
+# Ejecutar sus métodos (sus acciones)
+auto_juan.arrancar()    # Imprime: El Toyota ha arrancado. ¡Brum brum!
+
+class CuentaBancaria:
+    # 1. El constructor que crea la cuenta con el nombre del cliente y su saldo inicial
+    def __init__(self, titular, saldo_inicial):
+        self.titular = titular
+        self.saldo = saldo_inicial
+    
+
+    # 2. Un método para consultar el dinero disponible
+    def mostrar_saldo(self):
+        print(f"Hola {self.titular}, tu saldo actual es de ${self.saldo}")
+
+# --- AQUÍ ABAJO USAMOS EL MOLDE ---
+
+# 3. Vamos a crear la cuenta real de "Sofía" que empieza con $500 pesos
+cuenta_sofia = CuentaBancaria("Sofía", 500)
+
+# 4. Probamos el método para ver su saldo
+cuenta_sofia.mostrar_saldo()
