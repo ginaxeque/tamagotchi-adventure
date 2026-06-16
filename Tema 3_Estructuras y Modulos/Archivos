@@ -1,0 +1,10 @@
+archivo = open("usuarios.txt","w")
+archivo.write("Fritz")
+archivo.close()
+
+archivo = open("usuarios.txt", "r")
+contenido = archivo.read()
+print(contenido)
+archivo.close()
+
+

@@ -1,0 +1,67 @@
+# Ejercicio de Filas
+from collections import deque
+fila = deque()
+
+fila.append("User 1")
+fila.append("User 2")
+fila.append("User 3")
+
+print(fila)
+
+# Sacar primer elemento
+primero = fila.popleft()
+
+print(primero)
+print(fila)
+
+# Ejercicio de Pilas-Stack
+pila= []
+
+# Agregar elementos
+pila.append("Fritz")
+pila.append("Chichi")
+pila.append("Monina")
+
+print(pila)
+
+ultimo = pila.pop()
+print(ultimo)
+
+# Ejercicio de listas enlazadas
+class Nodo:
+    def __init__ (self,valor):
+        self.valor= valor
+        self.siguiente= None
+        
+class ListaEnlazada:
+    def __init__ (self):
+        self.cabeza = None
+        
+    def agregar(self, valor):
+        nuevo= Nodo(valor)
+        if not self.cabeza:
+            self.cabeza= nuevo
+        else:
+            actual= self.cabeza
+            while actual.siguiente:
+                actual= actual.siguiente
+            actual.siguiente= nuevo
+            
+    def mostrar(self):
+        actual= self.cabeza
+        while actual:
+            print(actual.valor, end="->")
+            actual= actual.siguiente
+        print(None)
+
+#Uso
+lista= ListaEnlazada()
+lista.agregar("A")
+lista.agregar("B")
+lista.agregar("C")
+lista.mostrar()
+
+
+
+    
+    

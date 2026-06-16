@@ -1,0 +1,73 @@
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_1
+# CÓDIGOSUCIO
+x=10 
+y=20 
+z=x+y 
+print(z)
+# CÓDIGOLIMPIO
+x = 10
+y = 20
+z = x + y
+print(z)
+# CÓDIGOLIMPIO MEJORADO
+numero1 = 10 
+numero2 = 20 
+resultado = numero1 + numero2 
+print(resultado)
+
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_2
+def a(b,c):
+ return b*c
+# CÓDIGOSUGERIDO EN EL CURSO
+def calcular_producto(numero1, numero2): 
+    return numero1 * numero2
+
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_3
+a=5 
+b=10 
+c=15 
+d=a+b+c 
+print(d)
+# CÓDIGOLIMPIO
+numero1 = 5
+numero2 = 10
+numero3 = 15
+resultado = numero1 + numero2 + numero3
+print(resultado)
+
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_4
+def calc(x,y): 
+    r=x+y 
+    print(r)
+# CÓDIGOLIMPIO
+def calcular_suma(numero1, numero2): 
+    resultado = numero1 + numero2 
+    print(resultado)    
+    
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_5
+print("Hola Ana") 
+print("Hola Juan") 
+print("Hola Pedro")
+# CÓDIGOLIMPIO
+nombres = ["Ana", "Juan", "Pedro"]
+for nombre in nombres:
+    print(f"Hola {nombre}") 
+
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_6
+#if True: 
+#print("Bien")
+# CÓDIGOLIMPIO
+if True:
+    print("Bien")   
+
+#EJEMPLO DE CÓDIGOSUCIO VS CÓDIGOLIMPIO_7
+#n="Juan" 
+#e=18 if 
+#e>=18: 
+#print("ok")
+# CÓDIGOLIMPIO
+nombre = "Juan"
+edad = 18
+if edad >= 18:
+    print("ok")
+
