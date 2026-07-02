@@ -220,7 +220,7 @@ def precargar_datos_cafeteria(inventario):
     """
     JUSTIFICACIÓN TÉCNICA: Realicé una precarga automatizada orientada para pruebas.
     Si el sistema detecta que no hay un archivo JSON previo, inicializa el programa con el modelo 
-    financiero de la cafetería, configurando márgenes y guardando tus ventas piloto.
+    financiero de la cafetería, configurando márgenes y guardando ventas piloto.
     """
     print("\n☕ [Sistema] Inicializando base de datos de la cafetería con datos de prueba de apertura...")
     
@@ -287,7 +287,7 @@ def ejecutar_consola():
     # JUSTIFICACIÓN RÚBRICA: Carga automática de datos al inicializar la ejecución.
     inventario = cargar_inventario(Producto)
     
-    # Si es la primera vez que el docente corre el programa, se inyectan los datos de la cafetería de forma transparente.
+    # Si se corre por primera vez el programa, se inyectan los datos de la cafetería de forma transparente.
     if not inventario:
         precargar_datos_cafeteria(inventario)
     
