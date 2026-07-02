@@ -1,0 +1,100 @@
+{
+    "PROD-CB01": {
+        "nombre": "Cold Brew Especial",
+        "tipo": "Fabricado",
+        "historial_compras": [
+            {
+                "costo_insumo": 45.0,
+                "cantidad": 70,
+                "logistica": 5.0
+            }
+        ],
+        "margen_deseado": {
+            "menudeo": 0.35,
+            "mayoreo": 0.2
+        },
+        "promociones_cupones": 0.0,
+        "datos_competencia": {
+            "nombre": "Starbucks / Competencia Zona",
+            "ubicacion": "Misma Colonia",
+            "fecha": "2026-07-01",
+            "precio": 85.0
+        },
+        "costos_fijos": [
+            {
+                "descripcion": "Sueldo Barista",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 20000
+            },
+            {
+                "descripcion": "Sueldo Emprendedor Fundador",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 30000
+            },
+            {
+                "descripcion": "Renta del Local Comercial",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 20000
+            },
+            {
+                "descripcion": "Servicio de Luz",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 900
+            },
+            {
+                "descripcion": "Servicio de Internet",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 500
+            }
+        ]
+    },
+    "PROD-BG02": {
+        "nombre": "Bagel de Salmón",
+        "tipo": "Comercializado",
+        "historial_compras": [
+            {
+                "costo_insumo": 55.0,
+                "cantidad": 20,
+                "logistica": 3.0
+            }
+        ],
+        "margen_deseado": {
+            "menudeo": 0.45,
+            "mayoreo": 0.25
+        },
+        "promociones_cupones": 0.0,
+        "datos_competencia": {
+            "nombre": "Cafeterías Gourmet Locales",
+            "ubicacion": "Misma Colonia",
+            "fecha": "2026-07-01",
+            "precio": 95.0
+        },
+        "costos_fijos": [
+            {
+                "descripcion": "Sueldo Barista",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 20000
+            },
+            {
+                "descripcion": "Sueldo Emprendedor Fundador",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 30000
+            },
+            {
+                "descripcion": "Renta del Local Comercial",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 20000
+            },
+            {
+                "descripcion": "Servicio de Luz",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 900
+            },
+            {
+                "descripcion": "Servicio de Internet",
+                "temporalidad": "Mensual",
+                "cantidad_mensual": 500
+            }
+        ]
+    }
+}
